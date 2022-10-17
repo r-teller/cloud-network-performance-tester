@@ -28,7 +28,7 @@ resource "google_compute_instance" "instance" {
   zone         = local.zone
   project      = var.project_id
 
-  metadata_startup_script = file("./metadata_startup_script")
+  metadata_startup_script = file("${path.module}/metadata_startup_script")
 
   boot_disk {
     initialize_params {
