@@ -1,0 +1,13 @@
+*.ignore
+**/.terraform/*
+
+# .tfvar variable files
+*.tfvars
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+*.terraform.lock.*
+
+**/staging/*
+scripts/gcp/terraform.tfvars

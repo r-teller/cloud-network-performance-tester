@@ -1,0 +1,7 @@
+#! /bin/bash
+if [[ -f /etc/startup_was_launched ]]; then exit 0; fi
+
+apt-get update
+apt-get install net-tools curl wget vim jq gnupg2 ca-certificates lsb-release -y
+
+git clone https://github.com/r-teller/cloud-network-performance-tester/ /opt/cloud-network-performance-tester/
